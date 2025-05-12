@@ -62,6 +62,22 @@
       background-color: #adc4ff;
     }
 
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 columns of equal width */
+      grid-template-rows: repeat(3, auto); /* 3 rows with height based on content */
+      gap: 1rem; /* space between images */
+      justify-items: center; /* centers images horizontally */
+      align-items: center; /* centers images vertically */
+    }
+
+    .image-grid img {
+      width: 100%; /* makes images fill their grid space */
+      max-width: 200px; /* limits image size */
+      height: auto; /* keeps aspect ratio */
+      border-radius: 8px; /* optional, rounds image corners */
+    }
+
     footer {
       background-color: #0a8c00;
       text-align: center;
